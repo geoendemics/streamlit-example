@@ -3,8 +3,8 @@ import streamlit as st
 from st_aggrid import AgGrid, GridOptionsBuilder
 from st_aggrid.shared import GridUpdateMode
 
-iris = pd.read_csv(
-    "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv"
+iris = pd.read_excel(
+    "https://github.com/geoendemics/streamlit-example/blob/master/LAS_lab1.xlsx"
 )
 
 def aggrid_interactive_table(df: pd.DataFrame):
@@ -35,8 +35,8 @@ def aggrid_interactive_table(df: pd.DataFrame):
     return selection
 
 
-iris = pd.read_csv(
-    "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv"
+iris = pd.read_excel(
+    "https://github.com/geoendemics/streamlit-example/blob/master/LAS_lab1.xlsx"
 )
 
 selection = aggrid_interactive_table(df=iris)
