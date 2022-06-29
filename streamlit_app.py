@@ -45,12 +45,3 @@ if selection:
     st.write("You selected:")
     st.json(selection["selected_rows"])
 
-
-iris = pd.read_csv(
-    "https://raw.githubusercontent.com/geoendemics/streamlit-example/master/transposed2.csv")
-
-selection = aggrid_interactive_table(df=iris)
-
-if selection:
-    st.write("You selected:")
-    st.json(selection["selected_rows"])
