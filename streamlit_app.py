@@ -4,8 +4,7 @@ from st_aggrid import AgGrid, GridOptionsBuilder
 from st_aggrid.shared import GridUpdateMode
 
 iris = pd.read_csv(
-    "https://github.com/geoendemics/streamlit-example/blob/master/lab1.csv"
-)
+    "https://github.com/geoendemics/streamlit-example/blob/master/lab1.csv")
 
 def aggrid_interactive_table(df: pd.DataFrame):
     """Creates an st-aggrid interactive table based on a dataframe.
@@ -36,8 +35,7 @@ def aggrid_interactive_table(df: pd.DataFrame):
 
 
 iris = pd.read_csv(
-    "https://github.com/geoendemics/streamlit-example/blob/master/lab1.csv"
-)
+    "https://github.com/geoendemics/streamlit-example/blob/master/lab1.csv")
 
 selection = aggrid_interactive_table(df=iris)
 
