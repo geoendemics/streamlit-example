@@ -17,7 +17,7 @@ def aggrid_interactive_table(df: pd.DataFrame):
         dict: The selected row
     """
     options = GridOptionsBuilder.from_dataframe(
-        df, enableRowGroup=True, enableValue=True, enablePivot=True
+        df, enableRowGroup=True, enableValue=True, enablePivot=False
     )
 
     options.configure_side_bar()
